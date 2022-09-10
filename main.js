@@ -5,9 +5,9 @@ function converteMoeda(){
 
     let valor =parseFloat(document.getElementById('entradaValor').value); 
 
-    let converteDolar = (valor / 5.06).toFixed(2);
-    let converteEuro = (valor / 5.17).toFixed(2);
-    let converteBitCoin = (valor / 108970.69).toFixed(5);
+    let converteDolar = (valor / 5.15).toFixed(2);
+    let converteEuro = (valor / 5.23).toFixed(2);
+    let converteBitCoin = (valor / 109.381,489).toFixed(5);
     
     if(moeda == 'Dolar'){
         resultadoDolar.innerHTML = `O valor em Dolar é US$ ${converteDolar}`
