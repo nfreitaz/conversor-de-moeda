@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+            rel="stylesheet">
+
+        <title>Conversor de Moedas</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
+        <main>
+            <div>
+                <figure>
+                    <img src="./Imagem/fotoporquinho.png" alt="Boneco colocando moeda em cofrinho">
+                </figure>
+            </div>
+            <div>
+                <form>
+                    <label for="moedaDolar">Digite em real, e escolha uma moeda para converter o valor: </label>
+                    <select id="conversorMoeda" >
+                        <option value="valor0"></option>
+                        <option value="Dolar">Dolar</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Bit Coin">Bit Coin</option>
+                    </select>
+                    <label for="valor">Insira o valor para conversão : </label>
+                    <input id="entradaValor" type="text" placeholder="R$ 5.00">
+                </form>
+                <button id="btn" class="button" onclick="converteMoeda()"> Converte</button>
+                    <h2 id="resultadoDolar"></h2>
+                    <h2 id="resultadoEuro"></h2>
+                    <h2 id="resultadoBitCoin"></h2>
+            </div>
+        
+
+        </main>
+
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
